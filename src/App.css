@@ -1,0 +1,20 @@
+* {
+  background-color: black;
+  color: white;
+}
+.connectButton {
+  border: solid 2px #e10f0f;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.connectButton:hover {
+  background-color: #e10f0f; /* Darker blue on hover */
+}
+
