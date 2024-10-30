@@ -7,8 +7,7 @@ const ConnectComponent = () => {
 
   
     return (
-        <div className={styles.container}>
-          <div className={styles.neonLine}></div>
+        <div className={styles.MainBox}>
           <div className={styles.connectBox}>
             <h1 className={styles.heading}>
               How about we start something awesome <span style={{ color: 'neon green' }}>together?</span>
