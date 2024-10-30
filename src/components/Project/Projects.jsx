@@ -1,47 +1,31 @@
-import React, { useState } from 'react';
-import styles from './Projects.module.css';
+import  { useState } from 'react';
+import CardFlip from './CardFlip';
+import { projects } from '../../data';
 
-const ProjectCard = ({ project }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+function Projects() {
+  const [visibleProjects, setVisibleProjects] = useState(6);
 
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
+  const showMoreProjects = () => {
+    setVisibleProjects((prev) => prev + 6);
   };
 
   return (
-    <div
-      className={`${styles.projectCard} ${isExpanded ? styles.expanded : ''}`}
-      onClick={toggleExpand}
-    >
-      <div className={styles.cardContent}>
-        <h2 className={styles.projectTitle}>{project.title}</h2>
-        <p className={styles.projectDescription}>{project.shortDescription}</p>
-
-        <div className={styles.links}>
-          <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className={styles.btn}>
-            Live Demo
-          </a>
-          <a href={project.github} target="_blank" rel="noopener noreferrer" className={styles.btn}>
-            GitHub
-          </a>
-        </div>
-
-        {isExpanded && (
-          <div className={styles.expandedContent}>
-            <h3>Features</h3>
-            <ul>
-              {project.features.map((feature, index) => (
-                <li key={index}>{feature}</li>
-              ))}
-            </ul>
-
-            <h3>Skills and Technologies</h3>
-            <p>{project.skills}</p>
+    <div className="container">
+      <h1>Projects</h1>
+      <div className="row">
+        {projects.slice(0, visibleProjects).map((project) => (
+          <div className="col-md-4 mb-4" key={project.id}>
+            <CardFlip project={project} />
           </div>
-        )}
+        ))}
       </div>
+      {/* {visibleProjects < projects.length && (
+        <button className="connectButton" onClick={showMoreProjects}>
+          Show More
+        </button>
+      )} */}
     </div>
   );
-};
+}
 
-export default ProjectCard;
+export default Projects;
