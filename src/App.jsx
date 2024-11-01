@@ -9,9 +9,6 @@ import ResumeSection from './components/ResumeSection/ResumeSection';
 import Projects from './components/Project/Projects.jsx';
 import Skills from './components/Skills/Skills.jsx';
 
- 
-
-
 function App() {
 
   return (
