@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import  { useRef, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import styles from './ResumeSection.module.css';
 import bgVideo from '/blueBackground.mp4'; // Ensure the path is correct

@@ -1,4 +1,3 @@
-import { FaReact, FaJsSquare, FaDatabase, FaHtml5, FaCss3Alt, FaBootstrap, FaCodeBranch, FaNodeJs } from 'react-icons/fa'; 
 
 
 export const projects = [
