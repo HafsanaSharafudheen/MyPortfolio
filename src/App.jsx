@@ -2,7 +2,7 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-//import Footer from './components/footer';
+import Footer from './components/footer';
 import QuoteBox from './components/QuoteBox/QuoteBox';
 import ConnectComponent from './components/connect/Connect';
 import ResumeSection from './components/ResumeSection/ResumeSection';
@@ -19,7 +19,7 @@ function App() {
 <Projects/>   
 <Skills/>
     <ConnectComponent/>
-    {/* <Footer/> */}
+    <Footer/>
     </>
  
   )
