@@ -2,19 +2,21 @@
   background-color: black;
   color: white;
 }
-.connectButton {
-  border: solid 2px #e10f0f;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
+.downloadButton {
+  background-color: #00ffcc; /* Neon color */
+  border: none;
   border-radius: 5px;
+  padding: 10px 20px;
+  color: #282c34; /* Dark text color */
   cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 20px;
+  transition: background-color 0.3s;
 }
 
-.connectButton:hover {
-  background-color: #e10f0f; /* Darker blue on hover */
+.downloadButton:hover {
+  background-color: #06d1a9; /* Lighter neon on hover */
 }
-
+.textCentre{
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}

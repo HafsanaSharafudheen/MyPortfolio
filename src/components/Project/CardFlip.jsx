@@ -10,7 +10,6 @@ function CardFlip({ project }) {
           {/* Front Side */}
           <div className={styles.flipCardFront}>
             <h2 className={styles.title}>{project.title}</h2>
-            <p className={styles.description}>{project.des}</p>
             <div
               className={styles.image}
               style={{ backgroundImage: `url(${project.img})` }}
@@ -19,7 +18,9 @@ function CardFlip({ project }) {
 
           {/* Back Side */}
           <div className={styles.flipCardBack}>
-            <p>{project.detailedDesc}</p>
+          <p className={styles.description}>{project.des}</p>
+
+            {/* <p>{project.detailedDesc}</p> */}
             <div className={styles.buttonContainer}>
               <a href={project.link} className="btn btn-dark m-2" target="_blank" rel="noopener noreferrer">
                 GitHub

@@ -1,0 +1,68 @@
+.sentenceBox {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center; 
+}
+
+.sentenceBox h1 {
+  color: hsl(0, 81%, 38%);
+  font-size: 60px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+h1 span {
+  transition: 0.5s ease-out;
+}
+
+h1:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+
+h1:hover span:nth-child(2) {
+  margin-left: 30px;
+}
+
+h1:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px #87c795, 0 0 5px #fff, 0 0 0px #fff;
+}
+
+.buttonStyle {
+  background-color: #282c34; /* Dark background */
+  color: #00ffcc; /* Neon color */
+  border: none;
+  border-radius: 5px; /* Slightly rounded corners */
+  padding: 10px 20px;
+  margin: 10px 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; /* Prevent overflow of the glow */
+}
+
+.buttonStyle:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 255, 204, 0.5); /* Light neon background */
+  transform: scale(0);
+  transition: transform 0.5s ease;
+  z-index: 0; /* Behind the text */
+}
+
+.buttonStyle:hover:before {
+  transform: scale(1); /* Scale the glow */
+}
+
+.buttonStyle:hover {
+  color: #282c34; /* Dark text on hover */
+  box-shadow: 0 0 10px #06d1a9; /* Neon glow effect */
+  z-index: 1; /* Bring text above the glow */
+}

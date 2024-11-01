@@ -1,0 +1,53 @@
+/* ResumeSection.module.css */
+.resumeSection {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  margin-top: 200px;
+  background-color: transparent;
+}
+
+.videoSection {
+  position: relative;
+}
+
+.backgroundVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+ 
+}
+
+.contentOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  background-color: transparent;
+}
+a{
+  text-decoration: none;
+}
+.downloadButton {
+  background-color: #00ffcc; /* Neon color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #282c34; /* Dark text color */
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.downloadButton:hover {
+  background-color: #06d1a9; /* Lighter neon on hover */
+}
+.heading{
+  background-color: transparent;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+

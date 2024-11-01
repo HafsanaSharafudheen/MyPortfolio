@@ -18,24 +18,21 @@
 }
 
 .heading {
-  margin: 0;
+  margin: 0px;
   padding-bottom: 20px;
 }
 
-.connectButton {
-  border: 2px solid red;
-  background-color: transparent;
-  padding: 10px 20px;
-  font-size: 16px;
+.downloadButton {
+  background-color: #00ffcc; /* Neon color */
+  border: none;
   border-radius: 5px;
-  margin-top: 30px;
+  padding: 10px 20px;
+  color: #282c34; /* Dark text color */
   cursor: pointer;
-  text-decoration: none;
-  color: white;                      /* Text color for visibility */
-  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-top: 20px;
+  transition: background-color 0.3s;
 }
 
-.connectButton:hover {
-  background-color: red;
-  color: black;
+.downloadButton:hover {
+  background-color: #06d1a9; /* Lighter neon on hover */
 }

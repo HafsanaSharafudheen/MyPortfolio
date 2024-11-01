@@ -1,0 +1,33 @@
+body {
+	overflow-x: hidden;
+  }
+  
+  .Container {
+	display: flex;
+	flex-wrap: wrap; /* Allow wrapping to the next line */
+	justify-content: space-around; /* Space out the cards */
+  }
+  
+  .card {
+	height: 50px; /* Set a fixed height for cards */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 10px;
+margin-top: 30px;	
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	background-color: #333;
+  }
+  
+  .card:nth-child(odd) {
+	background-color: #120443;
+  }
+  
+  .cardText {
+	color: #fff;
+	margin-top: 10px;
+	background-color: transparent;
+  }
+  

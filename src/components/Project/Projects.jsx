@@ -1,7 +1,6 @@
 import  { useState } from 'react';
 import CardFlip from './CardFlip';
 import { projects } from '../../data';
-
 function Projects() {
   const [visibleProjects, setVisibleProjects] = useState(6);
 
@@ -10,20 +9,20 @@ function Projects() {
   };
 
   return (
-    <div className="container">
-      <h1>Projects</h1>
+    <div className="container" style={{textAlign: "center"}}>
+      <h1 style={{margin:"120px"}} className="textCentre">MY PROJECTS</h1>
       <div className="row">
         {projects.slice(0, visibleProjects).map((project) => (
-          <div className="col-md-4 mb-4" key={project.id}>
+          <div className="col-lg-4 col-md-6" key={project.id}>
             <CardFlip project={project} />
           </div>
         ))}
       </div>
-      {/* {visibleProjects < projects.length && (
-        <button className="connectButton" onClick={showMoreProjects}>
+      {visibleProjects < projects.length && (
+        <button className="downloadButton" onClick={showMoreProjects}>
           Show More
         </button>
-      )} */}
+      )}
     </div>
   );
 }
