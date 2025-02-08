@@ -1,6 +1,14 @@
 
 
 export const projects = [
+  {
+    id: 1,
+    title: "HomeWorks",
+    des: "A Complete service Providing Application.",
+    img: "/homeworks.png",
+    link: "https://github.com/HafsanaSharafudheen/HomeWorkServices",
+    liveLink: "https://homeworksapp.shop/",
+  },
     {
       id: 1,
       title: "Baby Bundles",
