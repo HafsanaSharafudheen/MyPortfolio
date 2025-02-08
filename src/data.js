@@ -4,13 +4,13 @@ export const projects = [
   {
     id: 1,
     title: "HomeWorks",
-    des: "A Complete service Providing Application.",
+    des: "A comprehensive service-providing application that seamlessly connects users with a wide range of professional services, ensuring convenience, efficiency, and reliability.",
     img: "/homeworks.png",
     link: "https://github.com/HafsanaSharafudheen/HomeWorkServices",
     liveLink: "https://homeworksapp.shop/",
   },
     {
-      id: 1,
+      id: 2,
       title: "Baby Bundles",
       des: "An e-commerce website dedicated to providing essential products for babies and toddlers.",
       img: "/babybuntle.png",
@@ -18,7 +18,7 @@ export const projects = [
       liveLink: "https://babybundleonline.shop/",
     },
     {
-      id: 2,
+      id: 3,
       title: "Mediflow",
       des: "An application for seamless doctor appointment booking.",
       img: "/Mediflow.png",
@@ -26,7 +26,7 @@ export const projects = [
       liveLink: "https://mediflow.shop/",
     },
     {
-      id: 3,
+      id: 4,
       title: "PDF Uploading App",
       des: "A platform where users can upload PDFs and create their own PDF documents.",
       img: "/PedfApp.png",
@@ -34,7 +34,7 @@ export const projects = [
       liveLink: "https://pdffileuploadapp-1.onrender.com/",
     },
     {
-      id: 4,
+      id: 5,
       title: "OLX Clone Application",
       des: "A minimalistic OLX clone with essential functionalities for buying and selling.",
       img: "/olx.png",
@@ -42,7 +42,7 @@ export const projects = [
       liveLink: "https://olx-clone-x8sj.onrender.com",
     },
     {
-      id: 5,
+      id: 6,
       title: "Netflix Clone",
       des: "A frontend design clone of the Netflix platform for exploring UI/UX design.",
       img: "/netflix.png",
@@ -50,7 +50,7 @@ export const projects = [
       liveLink: "https://netflix-rnax.onrender.com",
     },
     {
-      id: 6,
+      id: 7,
       title: "Way to Nikkah Clone",
       des: "A Front-End clone of application for meaningful conversations.",
       img: "/waytonikkah.png",
@@ -58,7 +58,7 @@ export const projects = [
       liveLink: "https://way-to-nikkah.onrender.com",
     },
     {
-      id: 7,
+      id: 8,
       title: "Facebook Static Frontend Clone",
       des: "A static frontend clone of Facebook for UI/UX study purposes.",
       img: "/fb.png",
@@ -66,7 +66,7 @@ export const projects = [
       liveLink: "https://facebook-t94y.onrender.com/",
     },
     {
-      id: 8,
+      id: 9,
       title: "Instagram Frontend Clone",
       des: "A frontend clone of Instagram designed for UI/UX study purposes.",
       img: "/instagram.png",
